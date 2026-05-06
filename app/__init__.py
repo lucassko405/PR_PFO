@@ -9,7 +9,8 @@ def create_app():
     
     # Configuración de persistencia y seguridad
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///gestion_tareas.db'
-    app.config['SECRET_KEY'] = 'una_clave_secreta_123' # Para proteger la sesión
+   # Para proteger la sesión y otros datos sensibles, se recomienda usar una clave secreta fuerte.
+    app.config['SECRET_KEY'] = 'una_clave_secreta_123' 
     
     db.init_app(app)
 
