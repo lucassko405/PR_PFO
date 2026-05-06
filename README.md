@@ -51,27 +51,6 @@ python -m venv venv
 - `POST /tareas`: Crear una nueva tarea.
   - Body: `{"titulo": "Título", "descripcion": "Descripción", "usuario_id": 1}`
 
-## Pruebas
-
-### Registro de Usuario
-```bash
-curl -X POST http://localhost:5000/registro -H "Content-Type: application/json" -d '{"username": "testuser", "password": "testpass"}'
-```
-
-### Inicio de Sesión
-
-curl -X POST http://localhost:5000/login -H "Content-Type: application/json" -d '{"username": "testuser", "password": "testpass"}'
-
-
-### Crear Tarea
-
-curl -X POST http://localhost:5000/tareas -H "Content-Type: application/json" -d '{"titulo": "Mi tarea", "descripcion": "Descripción", "usuario_id": 1}'
-
-
-### Listar Tareas
-
-curl http://localhost:5000/tareas/1
-
 
 ## Capturas de Pantalla
 
